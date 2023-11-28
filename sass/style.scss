@@ -1,0 +1,462 @@
+ 
+         *{
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+         } 
+          
+          
+          /* Resetear los estilos por defecto y aplicar estilos a la página */
+           body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        
+        /* Estilos del encabezado (header) y el menú de navegación (nav) */
+        header {
+            
+            color: #fff;
+    padding: 10px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    z-index: 20;
+        }
+        
+        nav {
+            float: right; /* Colocar el menú a la derecha */
+        }
+        
+        /* Estilos de la lista desordenada (ul) del menú */
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Estilos de los elementos de la lista (li) del menú */
+        li {
+            display: inline; /* Mostrar los elementos del menú en línea (uno al lado del otro) */
+            margin-right: 30px; /* Espacio entre elementos del menú */
+            font-size: 13px;
+        }
+        
+        /* Estilos de los enlaces (a) del menú */
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+                #imagen-fondo{
+                    background-image: url('../images/fondo.jpg'); /* Ruta de la imagen de fondo */
+                    background-size: cover; /* Ajusta la imagen al tamaño de la ventana del navegador */
+                background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+                width: 100% !important;
+                height: 90vh !important;
+                filter: brightness(0.3);
+                background-position: center;
+                    }
+
+                    .imagen-fondo h1{
+                        margin: 0px;
+                    }
+
+
+        .title-mid h1{
+            color:#B89840;
+            left: 0px;
+            right: 0px;
+            top: 30%;
+            position: absolute;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .btn-mas a{
+            color:#B89840;
+            left: 0px;
+            right: 0px;
+            top: 80%;
+            position: absolute;
+            text-align: center;
+        }
+
+        
+
+
+        .logo-de-pag{
+            font-size: 22px;
+        }
+
+        .form-primero{
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav :hover{
+            color: #B89840;
+        }
+
+
+        /*aca finaliza la primera seccion del inicio de la pagina de INICIO*/
+
+
+
+        /*aqui inicia la segunda seccion de la pagina de INICIO*/
+ 
+
+        #seccion2{
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .texto1{
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .texto2{
+            text-align: center;
+            font-size: 38px;
+            margin: 20px 0px;
+        }
+
+       .caja-padre{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 40px 0px;
+       }
+
+
+       .caja-hija {
+        width: 30%;
+        
+    }
+
+    
+
+       
+
+
+       /*aca finaliza la segunda seccion de la pagina de INICIO*/
+
+
+
+       /*aca inicia la tercera seccion de la pagina de INICIO*/ 
+    
+       #seccion3{
+        background-color: #232221;
+        padding-top: 50px;
+        padding-bottom: 50px;
+       }
+
+       .titulo-s3{
+        text-align: center;
+        font-size: 16px;
+        color: #B89840;
+        padding-top: 8px;
+       }
+
+       .pregunta-s3{
+        text-align: center;
+        color: aliceblue;
+        font-size: 70px;
+       }
+
+       .parrafo-s3{
+        text-align: center;
+        color: aliceblue;
+        font-size: 39px;
+       }
+
+       .botton-s3{
+        text-align: center;
+        padding-bottom: 20px;
+       }
+
+
+        /* Mobile */
+
+
+       @media (max-width:767px){
+        
+
+
+
+        .columna{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 100px;
+        }
+        
+        .espacio{
+            margin-bottom: 150px;
+        }
+
+        .titulo-s3{
+            font-size: 30px;
+        }
+
+        .pregunta-s3{
+            font-size: 25px;
+        }
+
+
+        .espacioF{
+            margin-bottom: 70px;
+        }
+
+       }
+
+/*aca finaliza la tercera seccion de la pagina de INICIO*/
+
+
+/*======================================================*/
+/*aca inicia el FOOTER de la page*/
+/*======================================================*/  
+
+#seccion4{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.caja-padre2{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.hijo-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 50px;
+}
+
+
+
+.hijo-box img{
+    width: 35px;
+    height: 29px;
+    margin-bottom: 10px;
+}
+
+
+.titulo-s4{
+    text-align: center;
+    font-size: 16px;
+    color: #B89841;
+}
+
+.subs4{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+
+/*=====================================================*/
+/*=====================================================*/
+/*===================CONTACTO==========================*/
+/*=====================================================*/
+/*=====================================================*/
+
+
+.contactanosc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+
+.formis2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#formcont{
+    background-color: #232221;
+    color: aliceblue;
+    padding: 50px 0px;
+}
+
+.titlecont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.textcont2{
+    width: 40%;
+    text-align: center;
+}
+
+.hijo-a img{
+    width: 35px;
+    height: 29px;
+    margin-right: 1%;
+}
+
+.hijo-b img{
+    width: 35px;
+    height: 29px;
+    margin-right: 1%;
+}
+
+.hijo-c img{
+    width: 35px;
+    height: 29px;
+    margin-right: 1%;
+}
+
+.hijo-a{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hijo-b{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hijo-c{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.clasemedia{
+    display: flex;
+    flex-direction: column;
+    height: 15em;
+    justify-content: space-between;
+}
+
+/*==================================================*/
+/*==================SOBRE NOSOTROS==================*/
+/*==================================================*/
+
+#contenido-sobrenos{
+    background-color: #232221;
+    color: aliceblue;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.sobre-nosotros1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre-nosotros2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre-nosotros3{
+    display: flex;
+    justify-content: space-between;
+}
+
+.parrafo-nos{
+    width: 50%;
+    margin-right: 3%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 26px;
+}
+
+.titulo-nos{
+    margin-left: 3%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+/*================================================*/
+/*=================SECCION CONSEJOS===============*/
+/*================================================*/
+
+#contenido-consejos{
+    display:flex;
+    background-color: #232221;
+    color: aliceblue;
+    height: 100vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;   
+}
+
+
+.seccion-consejos1 {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.seccion-consejos2 {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+
+.texto-con{
+    font-size: 16px;
+}
+
+.texto-con2{
+    font-size: 16px;
+}
+
+
+/*================================================*/
+/*=================SECCION FAQ====================*/
+/*================================================*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#preguntas-frecuentes{
+    background-color: #232221;
+    color: aliceblue;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.div-hijopf{
+    margin-bottom: 10%;
+}
+.titulo-pf{
+    margin-bottom: 10%;
+    color: #B89840;
+}
+
+.titulo-pf{
+    padding-top: 30px;
+}
+
+.div-hijopf p {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+

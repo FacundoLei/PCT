@@ -5,25 +5,56 @@
   scroll-behavior: smooth;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* FORMULARIO NUEVO BOOSTRA */
+textarea.form-control {
+  height: 100px !important;
+}
+
+button.btn.btn-primary {
+  margin-top: 20px;
+}
+
+.flex-form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+.col {
+  width: 50%;
+}
+
+.d-md-block {
+  display: grid !important;
+  align-content: center !important;
+  justify-content: center;
+  align-items: center;
+}
+
+/* LOGO PCT */
+a.logo-de-pag {
+  font-size: 30px;
+}
+
 .navbar.navbar-dark.bg-dark.fixed-top {
   display: none;
 }
 
-/* BOTON VER MAS */
-.btn-mas a:hover {
-  color: white;
-  transform: scale(1.2);
-}
-
-/* Resetear los estilos por defecto y aplicar estilos a la página */
-body {
+body { /* Resetear los estilos por defecto y aplicar estilos a la página */
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 
-/* Estilos del encabezado (header) y el menú de navegación (nav) */
-header {
+header { /* Estilos del encabezado (header) y el menú de navegación (nav) */
   color: #fff;
   padding: 10px;
   position: absolute;
@@ -33,29 +64,31 @@ header {
   width: 100%;
   z-index: 20;
 }
-
-nav {
+header nav {
   float: right; /* Colocar el menú a la derecha */
 }
-
-/* Estilos de la lista desordenada (ul) del menú */
-ul {
+header ul { /* Estilos de la lista desordenada (ul) del menú */
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
-/* Estilos de los elementos de la lista (li) del menú */
-li {
+header li { /* Estilos de los elementos de la lista (li) del menú */
   display: inline; /* Mostrar los elementos del menú en línea (uno al lado del otro) */
   margin-right: 30px; /* Espacio entre elementos del menú */
   font-size: 13px;
 }
-
-/* Estilos de los enlaces (a) del menú */
-a {
+header .nav {
+  float: left;
+}
+header a { /* Estilos de los enlaces (a) del menú */
   text-decoration: none;
   color: #fff;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+header a:hover {
+  color: #B89840;
+  transform: scale(1.2);
 }
 
 #imagen-fondo {
@@ -66,10 +99,6 @@ a {
   height: 90vh !important;
   filter: brightness(0.3);
   background-position: center;
-}
-
-.imagen-fondo h1 {
-  margin: 0px;
 }
 
 .title-mid h1 {
@@ -83,6 +112,15 @@ a {
   padding-top: 50px;
 }
 
+.btn-mas {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  right: 0;
+  left: 0;
+  position: absolute;
+}
 .btn-mas a {
   color: #B89840;
   left: 0px;
@@ -92,32 +130,13 @@ a {
   text-align: center;
   transition-property: all;
   transition-duration: 0.5s;
+  text-decoration: none;
+  position: relative !important;
+  bottom: 80px;
 }
-
-.logo-de-pag {
-  font-size: 22px;
-}
-
-.form-primero {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.nav :hover {
-  color: #B89840;
+.btn-mas a:hover { /* BOTON VER MAS */
+  color: white;
   transform: scale(1.2);
-}
-
-.nav a {
-  transition-property: all;
-  transition-duration: 0.5s;
-}
-
-.nav {
-  float: left;
 }
 
 /*aca finaliza la primera seccion del inicio de la pagina de INICIO*/
@@ -126,27 +145,24 @@ a {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-
-.texto1 {
+#seccion2 .texto1 {
   text-align: center;
   font-size: 16px;
 }
-
-.texto2 {
+#seccion2 .texto2 {
   text-align: center;
   font-size: 38px;
   margin: 20px 0px;
 }
-
-.caja-padre {
+#seccion2 .caja-padre {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 40px 0px;
 }
-
-.caja-hija {
-  width: 30%;
+#seccion2 .caja-hija {
+  width: 60%;
+  text-align: center;
 }
 
 /*aca finaliza la segunda seccion de la pagina de INICIO*/
@@ -156,35 +172,53 @@ a {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-
-.titulo-s3 {
+#seccion3 .titulo-s3 {
   text-align: center;
   font-size: 16px;
   color: #B89840;
   padding-top: 8px;
 }
-
-.pregunta-s3 {
+#seccion3 .pregunta-s3 {
   text-align: center;
   color: aliceblue;
   font-size: 70px;
 }
-
-.parrafo-s3 {
+#seccion3 .parrafo-s3 {
   text-align: center;
   color: aliceblue;
   font-size: 39px;
 }
-
-.botton-s3 {
+#seccion3 .botton-s3 {
   text-align: center;
   padding-bottom: 20px;
 }
+#seccion3 .form-primero {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
+/*aca finaliza la tercera seccion de la pagina de INICIO*/
 /* Mobile */
-@media (max-width: 767px) { /*inicio*/
+@media (max-width: 767px) {
+  .flex-form {
+    margin: 0;
+  }
+  .col {
+    width: 90%;
+  }
+  button.btn.btn-primary {
+    margin-top: 20px;
+    padding: 10px 80px;
+  }
+  textarea.form-control {
+    height: 50px !important;
+  }
   .textcont1 {
     text-align: center;
+    padding: 0px 10px;
   }
   .textcont2 {
     height: 333px;
@@ -219,7 +253,7 @@ a {
     font-size: 30px;
   }
   .pregunta-s3 {
-    font-size: 25px;
+    font-size: 25px !important;
   }
   .espacioF {
     margin-bottom: 20px;
@@ -243,7 +277,7 @@ a {
     flex-direction: column;
   }
   .caja-hija {
-    width: 100%;
+    width: 100% !important;
     padding: 0px 20px;
   }
   .caja-hija p {
@@ -271,116 +305,57 @@ a {
     padding: 10px 15px;
   }
 }
-/*aca finaliza la tercera seccion de la pagina de INICIO*/
-/*======================================================*/
-/*aca inicia el FOOTER de la page*/
-/*======================================================*/
-#seccion4 {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.caja-padre2 {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
-.hijo-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 50px;
-}
-
-.hijo-box img {
-  width: 35px;
-  height: 29px;
-  margin-bottom: 10px;
-}
-
-.titulo-s4 {
-  text-align: center;
-  font-size: 16px;
-  color: #B89841;
-}
-
-.subs4 {
-  text-align: center;
-  font-size: 40px;
-  margin-bottom: 30px;
-}
-
 /*=====================================================*/
 /*=====================================================*/
 /*===================CONTACTO==========================*/
 /*=====================================================*/
 /*=====================================================*/
+#formcont {
+  background-color: #232221;
+  color: aliceblue;
+  padding: 50px 0px;
+}
+#formcont .titlecont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+#formcont .textcont2 {
+  width: 40%;
+  text-align: center;
+}
+
 .contactanosc {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
 }
-
-.formis2 {
+.contactanosc .formis2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
-#formcont {
-  background-color: #232221;
-  color: aliceblue;
-  padding: 50px 0px;
-}
-
-.titlecont {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 50px;
-}
-
-.textcont2 {
-  width: 40%;
-  text-align: center;
-}
-
-.hijo-a img {
-  width: 35px;
-  height: 29px;
-  margin-right: 1%;
-}
-
-.hijo-b img {
-  width: 35px;
-  height: 29px;
-  margin-right: 1%;
-}
-
-.hijo-c img {
-  width: 35px;
-  height: 29px;
-  margin-right: 1%;
-}
-
-.hijo-a {
+.contactanosc .hijo-a {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-
-.hijo-b {
+.contactanosc .hijo-b {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-
-.hijo-c {
+.contactanosc .hijo-c {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+.contactanosc img {
+  width: 35px;
+  height: 29px;
+  margin-right: 1%;
 }
 
 .clasemedia {
@@ -399,34 +374,29 @@ a {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-
-.sobre-nosotros1 {
+#contenido-sobrenos .sobre-nosotros1 {
   display: flex;
   justify-content: space-between;
 }
-
-.sobre-nosotros2 {
+#contenido-sobrenos .sobre-nosotros2 {
   display: flex;
   justify-content: space-between;
 }
-
-.sobre-nosotros3 {
+#contenido-sobrenos .sobre-nosotros3 {
   display: flex;
   justify-content: space-between;
 }
-
-.parrafo-nos {
+#contenido-sobrenos .titulo-nos {
+  margin-left: 3%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+#contenido-sobrenos .parrafo-nos {
   width: 50%;
   margin-right: 3%;
   margin-top: 10%;
   margin-bottom: 10%;
   font-size: 26px;
-}
-
-.titulo-nos {
-  margin-left: 3%;
-  margin-top: 10%;
-  margin-bottom: 10%;
 }
 
 /*================================================*/
@@ -441,63 +411,82 @@ a {
   align-items: center;
   justify-content: center;
 }
-
-.seccion-consejos1 {
+#contenido-consejos .seccion-consejos1 {
   height: 70%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 50px;
 }
-
-.seccion-consejos2 {
-  height: 70%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 50px;
-}
-
-.texto-con {
+#contenido-consejos .texto-con {
   font-size: 16px;
 }
-
-.texto-con2 {
+#contenido-consejos .seccion-consejos2 {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 50px;
+}
+#contenido-consejos .texto-con2 {
   font-size: 16px;
 }
 
 /*================================================*/
 /*=================SECCION FAQ====================*/
 /*================================================*/
-* {
-  margin: 0;
-  padding: 0;
-}
-
 #preguntas-frecuentes {
   background-color: #232221;
   color: aliceblue;
   text-align: center;
   padding-bottom: 50px;
 }
-
-.div-hijopf {
+#preguntas-frecuentes .div-hijopf {
   margin-bottom: 10%;
 }
-
-.titulo-pf {
+#preguntas-frecuentes .titulo-pf {
   margin-bottom: 10%;
+  padding-top: 30px;
   color: #B89840;
 }
-
-.titulo-pf {
-  padding-top: 30px;
-}
-
-.div-hijopf p {
+#preguntas-frecuentes .div-hijopf p {
   width: 50%;
   margin: 0 auto;
   padding-top: 20px;
+}
+
+/*======================================================*/
+/*aca inicia el FOOTER de la page*/
+/*======================================================*/
+#seccion4 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#seccion4 .titulo-s4 {
+  text-align: center;
+  font-size: 16px;
+  color: #B89841;
+}
+#seccion4 .subs4 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+#seccion4 .caja-padre2 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+#seccion4 .hijo-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 100px;
+}
+#seccion4 img {
+  width: 35px;
+  height: 29px;
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

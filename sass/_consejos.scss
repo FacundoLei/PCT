@@ -1,0 +1,33 @@
+/*================================================*/
+         /*=================SECCION CONSEJOS===============*/
+         /*================================================*/
+
+         #contenido-consejos {
+            display: flex;
+            background-color: #232221;
+            color: aliceblue;
+            height: 100vh;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            .seccion-consejos1 {
+             height: 70%;
+             display: flex;
+             flex-direction: column;
+             justify-content: space-around;
+             padding: 50px;
+           }
+           .texto-con {
+             font-size: 16px;
+           }
+           .seccion-consejos2 {
+             height: 70%;
+             display: flex;
+             flex-direction: column;
+             justify-content: space-around;
+             padding: 50px;
+           }
+           .texto-con2 {
+             font-size: 16px;
+           }
+          }

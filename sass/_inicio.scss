@@ -1,0 +1,88 @@
+ /*aqui inicia la segunda seccion de la pagina de INICIO*/
+         
+
+ #seccion2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+        .texto1 {
+         text-align: center;
+         font-size: 16px;
+     }
+     .texto2 {
+      text-align: center;
+      font-size: 38px;
+      margin: 20px 0px;
+    }
+    .caja-padre {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin: 40px 0px;
+    }
+    .caja-hija {
+      width: 60% ;
+      text-align: center;
+    }
+    }
+   
+   /*aca finaliza la segunda seccion de la pagina de INICIO*/
+   
+   
+   
+   /*aca inicia la tercera seccion de la pagina de INICIO*/
+   #seccion3 {
+     background-color: #232221;
+     padding-top: 50px;
+     padding-bottom: 50px;
+     .titulo-s3 {
+      text-align: center;
+      font-size: 16px;
+      color: #B89840;
+      padding-top: 8px;
+    }
+    .pregunta-s3 {
+      text-align: center;
+      color: aliceblue;
+      font-size: 70px;
+    }
+    .parrafo-s3 {
+      text-align: center;
+      color: aliceblue;
+      font-size: 39px;
+    }
+    .botton-s3 {
+      text-align: center;
+      padding-bottom: 20px;
+    } 
+   }
+
+    /* FORMULARIO NUEVO BOOSTRA */
+
+    textarea.form-control{
+        height: 100px !important;
+      }
+
+      button.btn.btn-primary {
+        margin-top: 20px;
+    }
+     
+      .flex-form {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+        .col {
+          width: 50%;
+      }
+    }
+
+  .d-md-block {
+    display: grid !important;
+    align-content: center !important;
+    justify-content: center;
+    align-items: center;
+}
+
+   /*aca finaliza la tercera seccion de la pagina de INICIO*/

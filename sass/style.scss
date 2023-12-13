@@ -1,5 +1,4 @@
-
-         @charset "UTF-8";
+  @charset "UTF-8";
          * {
            margin: 0;
            padding: 0;
@@ -10,250 +9,31 @@
           margin: 0;
           padding: 0;
         }
+      
+        @import "footer";
+
+        @import "inicio";
+
+        @import "header";
+
+        @import "contacto";
+
+        @import "sobrenosotros";
+
+        @import "consejos";
+
+        @import "faQ";
 
 
-
-        /* FORMULARIO NUEVO BOOSTRA */
-
-
-
-
-        textarea.form-control{
-          height: 100px !important;
-        }
-
-
-
-        button.btn.btn-primary {
-          margin-top: 20px;
-      }
-       
-       
-        .flex-form {
-          display: flex;
-          flex-direction: column;
-          align-content: center;
-          justify-content: center;
-          align-items: center;
-          height: 20vh;
-      }
-
-
-      .col {
-        width: 50%;
-    }
-
-
-    .d-md-block {
-      display: grid !important;
-      align-content: center !important;
-      justify-content: center;
-      align-items: center;
-  }
-
-
-
-
-          /* LOGO PCT */
-
-          a.logo-de-pag {
-            font-size: 30px;
-        }
-
-
-
-
-
-
-
-         .navbar.navbar-dark.bg-dark.fixed-top{
-          display: none;
-        }
-
-
-         body {              /* Resetear los estilos por defecto y aplicar estilos a la página */
-          margin: 0;
-          padding: 0;
-          overflow-x: hidden;
-        }
-         
-        
            
-        header {                /* Estilos del encabezado (header) y el menú de navegación (nav) */
-          color: #fff;
-          padding: 10px;
-          position: absolute;
-          display: flex;
-          align-items: center;
-          justify-content: space-around;
-          width: 100%;
-          z-index: 20;
-          nav {
-            float: right; /* Colocar el menú a la derecha */
-          }
-          ul {                 /* Estilos de la lista desordenada (ul) del menú */
-            list-style: none;
-            margin: 0;
-            padding: 0;
-          }
-         li { /* Estilos de los elementos de la lista (li) del menú */
-          display: inline; /* Mostrar los elementos del menú en línea (uno al lado del otro) */
-          margin-right: 30px; /* Espacio entre elementos del menú */
-          font-size: 13px;
-        }
-        .nav{
-          float: left;
-        }
-        a {                     /* Estilos de los enlaces (a) del menú */
-          text-decoration: none;
-          color: #fff;
-          transition-property: all;
-           transition-duration: .5s;
-        }
-        a:hover {
-          color: #B89840;
-          transform: scale(1.2);
-        }
-          }
-
-
-         #imagen-fondo {
-           background-image: url("../images/fondo.jpg"); /* Ruta de la imagen de fondo */
-           background-size: cover; /* Ajusta la imagen al tamaño de la ventana del navegador */
-           background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
-           width: 100% !important;
-           height: 90vh !important;
-           filter: brightness(0.3);
-           background-position: center;
-         }
-
-
-
-         .title-mid{
-            h1 {
-           color: #B89840;
-           left: 0px;
-           right: 0px;
-           top: 30%;
-           position: absolute;
-           text-align: center;
-           font-size: 40px;
-           padding-top: 50px;
-         }
-         }
-
-         
-         .btn-mas{
-          display: flex;
-          align-content: center;
-          justify-content: center;
-          flex-wrap: wrap;
-          right: 0;
-          left: 0;
-          position: absolute;
-         a {
-           color: #B89840;
-           left: 0px;
-           right: 0px;
-           top: 80%;
-           position: absolute;
-           text-align: center;
-           transition-property: all;
-           transition-duration: .5s;
-           text-decoration: none;
-           position: relative !important;
-           bottom: 80px;
-         }
-         a:hover {        /* BOTON VER MAS */
-          color: white;
-          transform: scale(1.2);
-       }
-        }
-         
-         /*aca finaliza la primera seccion del inicio de la pagina de INICIO*/
-         
-         
-         
-         /*aqui inicia la segunda seccion de la pagina de INICIO*/
-         
-
-         #seccion2 {
-          padding-top: 50px;
-          padding-bottom: 50px;
-              .texto1 {
-               text-align: center;
-               font-size: 16px;
-           }
-           .texto2 {
-            text-align: center;
-            font-size: 38px;
-            margin: 20px 0px;
-          }
-          .caja-padre {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            margin: 40px 0px;
-          }
-          .caja-hija {
-            width: 60% ;
-            text-align: center;
-          }
-          }
-         
-         /*aca finaliza la segunda seccion de la pagina de INICIO*/
-         
-         
-         
-         /*aca inicia la tercera seccion de la pagina de INICIO*/
-         #seccion3 {
-           background-color: #232221;
-           padding-top: 50px;
-           padding-bottom: 50px;
-           .titulo-s3 {
-            text-align: center;
-            font-size: 16px;
-            color: #B89840;
-            padding-top: 8px;
-          }
-          .pregunta-s3 {
-            text-align: center;
-            color: aliceblue;
-            font-size: 70px;
-          }
-          .parrafo-s3 {
-            text-align: center;
-            color: aliceblue;
-            font-size: 39px;
-          }
-          .botton-s3 {
-            text-align: center;
-            padding-bottom: 20px;
-          }
-          .form-primero {
-            margin-top: 30px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-          }
-         }
-
-         /*aca finaliza la tercera seccion de la pagina de INICIO*/
-         
          /* Mobile */
          
          @media (max-width: 767px) {   
          
-
-
-
           .flex-form{
             margin: 0;
           }
 
-
-         
           .col {
             width: 90%;
         }
@@ -268,15 +48,12 @@
         height: 50px !important;
       }
 
-
-
            .textcont1{
              text-align: center;
              padding: 0px 10px;
            }
          
-         
-         
+        
            .textcont2{
              height: 333px;
              overflow-y: auto;
@@ -386,199 +163,4 @@
          
          }
          
-        
-         /*=====================================================*/
-         /*=====================================================*/
-         /*===================CONTACTO==========================*/
-         /*=====================================================*/
-         /*=====================================================*/
-
-         #formcont {
-          background-color: #232221;
-          color: aliceblue;
-          padding: 50px 0px;
-          .titlecont {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-bottom: 50px;
-          }
-          .textcont2 {
-            width: 40%;
-            text-align: center;
-          }
-          }
-
-
-
-          .contactanosc {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: space-evenly;
-          .formis2 {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-          }
-          .hijo-a {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-          }
-          .hijo-b {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-          }
-          .hijo-c {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-          }
-           img {
-            width: 35px;
-            height: 29px;
-            margin-right: 1%;
-          }
-           }
-
-
-
-           .clasemedia {
-            display: flex;
-            flex-direction: column;
-            height: 15em;
-            justify-content: space-between;
-          }
-
-         
-         /*==================================================*/
-         /*==================SOBRE NOSOTROS==================*/
-         /*==================================================*/
-
-
-         #contenido-sobrenos {
-           background-color: #232221;
-           color: aliceblue;
-           padding-top: 50px;
-           padding-bottom: 50px;
-           .sobre-nosotros1 {
-            display: flex;
-            justify-content: space-between;
-          }
-          .sobre-nosotros2 {
-            display: flex;
-            justify-content: space-between;
-          }
-          .sobre-nosotros3 {
-            display: flex;
-            justify-content: space-between;
-          }
-          .titulo-nos {
-            margin-left: 3%;
-            margin-top: 10%;
-            margin-bottom: 10%;
-          }
-          .parrafo-nos {
-            width: 50%;
-            margin-right: 3%;
-            margin-top: 10%;
-            margin-bottom: 10%;
-            font-size: 26px;
-          }
-          
-         }
-
-         /*================================================*/
-         /*=================SECCION CONSEJOS===============*/
-         /*================================================*/
-
-         #contenido-consejos {
-           display: flex;
-           background-color: #232221;
-           color: aliceblue;
-           height: 100vh;
-           flex-direction: row;
-           align-items: center;
-           justify-content: center;
-           .seccion-consejos1 {
-            height: 70%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            padding: 50px;
-          }
-          .texto-con {
-            font-size: 16px;
-          }
-          .seccion-consejos2 {
-            height: 70%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            padding: 50px;
-          }
-          .texto-con2 {
-            font-size: 16px;
-          }
-         }
-         
-         /*================================================*/
-         /*=================SECCION FAQ====================*/
-         /*================================================*/
-         
-         #preguntas-frecuentes {
-           background-color: #232221;
-           color: aliceblue;
-           text-align: center;
-           padding-bottom: 50px;
-           .div-hijopf {
-            margin-bottom: 10%;
-          }
-          .titulo-pf {
-            margin-bottom: 10%;
-            padding-top: 30px;
-            color: #B89840;
-          }
-          .div-hijopf p {
-            width: 50%;
-            margin: 0 auto;
-            padding-top: 20px;
-          }
-         }
-         
-        /*======================================================*/
-         /*aca inicia el FOOTER de la page*/
-         /*======================================================*/
-         #seccion4 {
-          padding-top: 50px;
-          padding-bottom: 50px;
-          .titulo-s4 {
-           text-align: center;
-           font-size: 16px;
-           color: #B89841;
-         }
-         .subs4 {
-           text-align: center;
-           font-size: 40px;
-           margin-bottom: 30px;
-         } 
-         .caja-padre2 {
-           display: flex;
-           justify-content: space-evenly;
-           flex-wrap: wrap;
-         }
-         .hijo-box {
-           display: flex;
-           flex-direction: column;
-           align-items: center;
-           padding-left: 100px;
-         } 
-         img {
-           width: 35px;
-           height: 29px;
-           margin-bottom: 10px;
-         }
-        } 
          

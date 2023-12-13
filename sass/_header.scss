@@ -1,0 +1,104 @@
+body {              /* Resetear los estilos por defecto y aplicar estilos a la página */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+header {                /* Estilos del encabezado (header) y el menú de navegación (nav) */
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    z-index: 20;
+    a.logo-de-pag {      /* LOGO PCT */
+      font-size: 30px;
+  }
+    nav {
+      float: right; /* Colocar el menú a la derecha */
+    }
+    ul {                 /* Estilos de la lista desordenada (ul) del menú */
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+   li { /* Estilos de los elementos de la lista (li) del menú */
+    display: inline; /* Mostrar los elementos del menú en línea (uno al lado del otro) */
+    margin-right: 30px; /* Espacio entre elementos del menú */
+    font-size: 13px;
+  }
+  .nav{
+    float: left;
+  }
+  a {                     /* Estilos de los enlaces (a) del menú */
+    text-decoration: none;
+    color: #fff;
+    transition-property: all;
+     transition-duration: .5s;
+  }
+  a:hover {
+    color: #B89840;
+    transform: scale(1.2);
+  }
+    }
+
+
+   #imagen-fondo {
+     background-image: url("../images/fondo.jpg"); /* Ruta de la imagen de fondo */
+     background-size: cover; /* Ajusta la imagen al tamaño de la ventana del navegador */
+     background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+     width: 100% !important;
+     height: 90vh !important;
+     filter: brightness(0.3);
+     background-position: center;
+   }
+
+
+
+   .title-mid{
+      h1 {
+     color: #B89840;
+     left: 0px;
+     right: 0px;
+     top: 30%;
+     position: absolute;
+     text-align: center;
+     font-size: 40px;
+     padding-top: 50px;
+   }
+   }
+
+   
+   .btn-mas{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    right: 0;
+    left: 0;
+    position: absolute;
+   a {
+     color: #B89840;
+     left: 0px;
+     right: 0px;
+     top: 80%;
+     position: absolute;
+     text-align: center;
+     transition-property: all;
+     transition-duration: .5s;
+     text-decoration: none;
+     position: relative !important;
+     bottom: 80px;
+   }
+   a:hover {        /* BOTON VER MAS */
+    color: white;
+    transform: scale(1.2);
+ }
+  }
+
+  .navbar.navbar-dark.bg-dark.fixed-top{
+    display: none;
+  }
+   

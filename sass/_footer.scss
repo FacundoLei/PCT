@@ -31,4 +31,22 @@
              margin-bottom: 10px;
            }
           } 
-           
+         
+          
+
+           /*=================*/
+         /*MOBILE*/
+    /*=================*/
+
+
+          @media (max-width: 767px) {
+            .espacioF {
+              margin-bottom: 20px;
+            }
+            .hijo-box{
+              padding-left: 0px !important;
+            }
+            .hijo-box h4{
+              display: none;
+            }
+          } 

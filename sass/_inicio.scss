@@ -86,3 +86,38 @@
 }
 
    /*aca finaliza la tercera seccion de la pagina de INICIO*/
+
+    /*=================*/
+         /*MOBILE*/
+    /*=================*/
+
+   @media (max-width: 767px) {
+          
+    .flex-form{
+    margin: 0;
+  }
+  .col {
+    width: 90% !important;
+}
+button.btn.btn-primary {
+  margin-top: 20px;
+  padding: 10px 80px;
+}
+textarea.form-control{
+  height: 50px !important;
+}
+.columna {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.espacio {
+  margin-bottom: 50px;
+}
+.titulo-s3 {
+  font-size: 30px;
+}
+.pregunta-s3 {
+  font-size: 25px !important;
+}
+ }

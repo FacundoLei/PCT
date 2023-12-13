@@ -44,6 +44,20 @@
   margin-bottom: 10px;
 }
 
+/*=================*/
+/*MOBILE*/
+/*=================*/
+@media (max-width: 767px) {
+  .espacioF {
+    margin-bottom: 20px;
+  }
+  .hijo-box {
+    padding-left: 0px !important;
+  }
+  .hijo-box h4 {
+    display: none;
+  }
+}
 /*aqui inicia la segunda seccion de la pagina de INICIO*/
 #seccion2 {
   padding-top: 50px;
@@ -126,6 +140,38 @@ button.btn.btn-primary {
 }
 
 /*aca finaliza la tercera seccion de la pagina de INICIO*/
+/*=================*/
+/*MOBILE*/
+/*=================*/
+@media (max-width: 767px) {
+  .flex-form {
+    margin: 0;
+  }
+  .col {
+    width: 90% !important;
+  }
+  button.btn.btn-primary {
+    margin-top: 20px;
+    padding: 10px 80px;
+  }
+  textarea.form-control {
+    height: 50px !important;
+  }
+  .columna {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .espacio {
+    margin-bottom: 50px;
+  }
+  .titulo-s3 {
+    font-size: 30px;
+  }
+  .pregunta-s3 {
+    font-size: 25px !important;
+  }
+}
 body { /* Resetear los estilos por defecto y aplicar estilos a la página */
   margin: 0;
   padding: 0;
@@ -224,6 +270,46 @@ header a:hover {
   display: none;
 }
 
+/*=================*/
+/*MOBILE*/
+/*=================*/
+@media (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+  #logopct {
+    display: none;
+  }
+  .title-mid {
+    display: none;
+  }
+  #imagen-fondo {
+    height: 50vh !important;
+  }
+  .btn-mas {
+    display: none;
+  }
+  .caja-padre {
+    flex-direction: column;
+  }
+  .caja-hija {
+    width: 100% !important;
+    padding: 0px 20px;
+  }
+  .caja-hija p {
+    text-align: center;
+  }
+  .navbar.navbar-dark.bg-dark.fixed-top {
+    display: block;
+  }
+  .bg-dark {
+    --bs-bg-opacity: 1;
+    background-color: #232221 !important;
+    -webkit-box-shadow: 0px 5px 7px 0px rgb(35, 34, 33);
+    -moz-box-shadow: 0px 5px 7px 0px rgb(35, 34, 33);
+    box-shadow: 0px 5px 7px 0px rgb(35, 34, 33);
+  }
+}
 /*=====================================================*/
 /*=====================================================*/
 /*===================CONTACTO==========================*/
@@ -284,6 +370,41 @@ header a:hover {
   justify-content: space-between;
 }
 
+/*=================*/
+/*MOBILE*/
+/*=================*/
+@media (max-width: 767px) {
+  .textcont1 {
+    text-align: center;
+    padding: 0px 10px;
+  }
+  .textcont2 {
+    height: 333px;
+    overflow-y: auto;
+    width: 100% !important;
+    padding: 0px 20px;
+  }
+  .contactanosc {
+    flex-direction: column !important;
+    gap: 50px;
+  }
+  .formis2 {
+    padding: 0px 20px;
+    gap: 40px;
+  }
+  .formis {
+    height: 50vh;
+  }
+  .clasemedia {
+    height: 50vh !important;
+    padding: 0px 20px;
+  }
+  #formcont {
+    background-color: #232221;
+    color: aliceblue;
+    padding: 10px 15px;
+  }
+}
 /*==================================================*/
 /*==================SOBRE NOSOTROS==================*/
 /*==================================================*/
@@ -318,6 +439,9 @@ header a:hover {
   font-size: 26px;
 }
 
+/*=================*/
+/*MOBILE*/
+/*=================*/
 /*================================================*/
 /*=================SECCION CONSEJOS===============*/
 /*================================================*/
@@ -351,6 +475,9 @@ header a:hover {
   font-size: 16px;
 }
 
+/*=================*/
+/*MOBILE*/
+/*=================*/
 /*================================================*/
 /*=================SECCION FAQ====================*/
 /*================================================*/
@@ -375,108 +502,5 @@ header a:hover {
 }
 
 /* Mobile */
-@media (max-width: 767px) {
-  .flex-form {
-    margin: 0;
-  }
-  .col {
-    width: 90%;
-  }
-  button.btn.btn-primary {
-    margin-top: 20px;
-    padding: 10px 80px;
-  }
-  textarea.form-control {
-    height: 50px !important;
-  }
-  .textcont1 {
-    text-align: center;
-    padding: 0px 10px;
-  }
-  .textcont2 {
-    height: 333px;
-    overflow-y: auto;
-    width: 100% !important;
-    padding: 0px 20px;
-  }
-  .contactanosc {
-    flex-direction: column !important;
-    gap: 50px;
-  }
-  .formis2 {
-    padding: 0px 20px;
-    gap: 40px;
-  }
-  .formis {
-    height: 50vh;
-  }
-  .clasemedia {
-    height: 50vh !important;
-    padding: 0px 20px;
-  }
-  .columna {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-  }
-  .espacio {
-    margin-bottom: 50px;
-  }
-  .titulo-s3 {
-    font-size: 30px;
-  }
-  .pregunta-s3 {
-    font-size: 25px !important;
-  }
-  .espacioF {
-    margin-bottom: 20px;
-  }
-  .nav {
-    display: none;
-  }
-  #logopct {
-    display: none;
-  }
-  .title-mid {
-    display: none;
-  }
-  #imagen-fondo {
-    height: 50vh !important;
-  }
-  .btn-mas {
-    display: none;
-  }
-  .caja-padre {
-    flex-direction: column;
-  }
-  .caja-hija {
-    width: 100% !important;
-    padding: 0px 20px;
-  }
-  .caja-hija p {
-    text-align: center;
-  }
-  .hijo-box h4 {
-    display: none;
-  }
-  .hijo-box {
-    padding-left: 0px !important;
-  }
-  .navbar.navbar-dark.bg-dark.fixed-top {
-    display: block;
-  }
-  .bg-dark {
-    --bs-bg-opacity: 1;
-    background-color: #232221 !important;
-    -webkit-box-shadow: 0px 5px 7px 0px rgb(35, 34, 33);
-    -moz-box-shadow: 0px 5px 7px 0px rgb(35, 34, 33);
-    box-shadow: 0px 5px 7px 0px rgb(35, 34, 33);
-  }
-  #formcont {
-    background-color: #232221;
-    color: aliceblue;
-    padding: 10px 15px;
-  }
-}
 
 /*# sourceMappingURL=style.css.map */

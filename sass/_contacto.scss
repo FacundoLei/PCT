@@ -1,24 +1,56 @@
- /*=====================================================*/
+
+/*=====================================================*/
          /*=====================================================*/
          /*===================CONTACTO==========================*/
          /*=====================================================*/
          /*=====================================================*/
 
          #formcont {
+          display: flex;
             background-color: #232221;
-            color: aliceblue;
-            padding: 50px 0px;
+            padding: 50px 50px;
+            align-items: flex-start;
+            gap: 40px;
             .titlecont {
               display: flex;
               flex-direction: column;
-              align-items: center;
-              padding-bottom: 50px;
+              height: 50vh;
+              justify-content: space-between;
+              width: 50%;
+            } 
+            .textcont1{
+              text-align: left;
+              color:white
             }
             .textcont2 {
-              width: 40%;
-              text-align: center;
+              width: 100%;
+              text-align: left;
+              color:white;
+            }
+            .img-cont{
+              width: 50%;
+              img{
+                height: 375px;
+                width: 635px;
+                object-fit: cover;
+              }
             }
             }
+
+
+            #formulario-piola{
+              background-color: #232221;
+              padding: 50px 50px;
+              h1{
+                text-align: center;
+                font-size: 30px;
+                color: #B89841;
+              }
+              .row{
+                margin: 20px;
+              }
+            }
+            
   
   
   
@@ -69,36 +101,56 @@
     /*=================*/
 
 
-            @media (max-width: 767px) {
-
+            @media (max-width: 767px){ 
+           
+              #formcont {
+                display: flex;
+                flex-direction: column;
+                background-color: #232221;
+                color: aliceblue;
+                padding: 10px 15px;
+                gap: 10px !important;
+                .titlecont{
+                  width: 100% !important;
+                }
               .textcont1{
                 text-align: center;
-                padding: 0px 10px;
+                padding: 10px 10px;
               }
               .textcont2{
                 height: 333px;
                 overflow-y: auto;
                 width: 100% !important;
                 padding: 0px 20px;
+                text-align: center;
               }
-              .contactanosc{
-                flex-direction: column !important;
-                gap:50px
+               .img-cont img {
+                height: auto;
+                width: 290px;
+                object-fit: cover;
+                clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+               }
+          }
+
+
+          #formulario-piola{
+            padding: 30px 30px;
+            gap: 8px;
+            display: flex;
+            flex-direction: column;
+            h1{
+              width: 100% !important;
+            }
+            .row{
+              flex-direction: column;
+              margin: 0;
+              gap: 8px;
+              .col{
+                width: 100% !important;
+              input{
+                width: 100% !important;
               }
-              .formis2{
-                padding: 0px 20px;
-                gap: 40px;
               }
-              .formis{
-                height: 50vh;
             }
-            .clasemedia{
-              height: 50vh !important;
-              padding: 0px 20px;
-            }
-            #formcont {
-              background-color: #232221;
-              color: aliceblue;
-              padding: 10px 15px;
-            }
-            } 
+          }
+           }

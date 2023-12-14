@@ -2,6 +2,12 @@
          /*=================SECCION CONSEJOS===============*/
          /*================================================*/
 
+         #accordionExample{
+          display:none;
+         }
+
+
+
          #contenido-consejos {
             display: flex;
             background-color: #232221;
@@ -32,12 +38,17 @@
            }
           }
 
-
            /*=================*/
-         /*MOBILE*/
-    /*=================*/
+                /*MOBILE*/
+           /*=================*/
 
 
           @media (max-width: 767px) {
-          
+          #contenido-consejos{
+            display:none;
+          }
+
+          #accordionExample{
+            display: block;
+          }
           } 

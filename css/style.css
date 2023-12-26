@@ -608,6 +608,77 @@ header a:hover {
 /*================================================*/
 /*=================SECCION FAQ====================*/
 /*================================================*/
+.accordion {
+  padding: 50px;
+  background-color: #232221;
+}
+.accordion .accordion-item {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  margin-bottom: 20px;
+}
+.accordion .accordion-item .accordion-button {
+  border: none !important;
+  background-color: #232221;
+  border-radius: 0px;
+  color: #B89840;
+}
+.accordion .accordion-item:first-of-type .accordion-button {
+  border: none !important;
+  background-color: #232221;
+  border-radius: 0px;
+}
+.accordion .accordion-item:last-of-type .accordion-button {
+  border: none !important;
+  background-color: #232221;
+  border-radius: 0px;
+}
+
+button.accordion-button:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f078";
+  right: 8px;
+  position: absolute;
+}
+
+.accordion-button:not(.collapsed):before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f077";
+  right: 8px;
+  position: absolute;
+}
+
+.accordion-body {
+  background-color: #232221;
+  color: white;
+}
+.accordion-body strong {
+  font-weight: 400;
+}
+.accordion-body code {
+  display: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none !important;
+}
+
+.accordion-button::after {
+  display: none !important;
+}
+
 /* Mobile */
+@media (max-width: 767px) {
+  .accordion {
+    padding: 20px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

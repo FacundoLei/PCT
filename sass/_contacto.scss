@@ -95,6 +95,22 @@
               justify-content: space-between;
             }
 
+           
+
+            /*TABLET*/
+
+            @media (max-width: 890px) {
+               .titlecont{ 
+                gap: 13px;
+               .textcont1{
+                font-size: 21px;
+               }
+               .textcont2{
+                font-size: 13px;
+               }
+              }
+             }
+
 
              /*=================*/
          /*MOBILE*/

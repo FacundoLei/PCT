@@ -44,6 +44,18 @@
   margin-bottom: 10px;
 }
 
+/*TABLET*/
+@media (max-width: 890px) {
+  .caja-padre2 {
+    flex-direction: column;
+    align-items: center !important;
+    gap: 20px;
+  }
+  .hijo-box {
+    flex-direction: row !important;
+    padding: 0px !important;
+  }
+}
 /*=================*/
 /*MOBILE*/
 /*=================*/
@@ -399,6 +411,18 @@ header a:hover {
   justify-content: space-between;
 }
 
+/*TABLET*/
+@media (max-width: 890px) {
+  .titlecont {
+    gap: 13px;
+  }
+  .titlecont .textcont1 {
+    font-size: 21px;
+  }
+  .titlecont .textcont2 {
+    font-size: 13px;
+  }
+}
 /*=================*/
 /*MOBILE*/
 /*=================*/
@@ -486,6 +510,27 @@ header a:hover {
   font-size: 26px;
 }
 
+/*TABLET*/
+@media (max-width: 890px) {
+  .sobre-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .sobre-nosotros .titulo-nos {
+    margin: 0px 0px 20px 0px !important;
+    text-align: center;
+    height: 100%;
+    font-size: 30px;
+  }
+  .sobre-nosotros .parrafo-nos {
+    margin: 0px 0px !important;
+    height: 100%;
+    font-size: 20px !important;
+  }
+}
 /*=================*/
 /*MOBILE*/
 /*=================*/

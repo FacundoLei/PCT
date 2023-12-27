@@ -8,29 +8,22 @@
             color: aliceblue;
             padding-top: 50px;
             padding-bottom: 50px;
-            .sobre-nosotros1 {
+            .sobre-nosotros {
              display: flex;
-             justify-content: space-between;
-           }
-           .sobre-nosotros2 {
-             display: flex;
-             justify-content: space-between;
-           }
-           .sobre-nosotros3 {
-             display: flex;
-             justify-content: space-between;
+             justify-content:center;
+             align-items: center;
+             flex-direction: column;
+             text-align:center;
+             gap: 20px;
            }
            .titulo-nos {
-             margin-left: 3%;
-             margin-top: 10%;
-             margin-bottom: 10%;
+            margin: 0px;
+            color:#B89841 ;
            }
            .parrafo-nos {
              width: 50%;
-             margin-right: 3%;
-             margin-top: 10%;
-             margin-bottom: 10%;
              font-size: 26px;
+             margin: 0px 0px 60px 0px;
            }
            
           }
@@ -72,7 +65,7 @@
               display: flex;
               flex-direction: column;
               flex-wrap: wrap;
-          .sobre-nosotros1{
+          .sobre-nosotros{
             display: flex;
             justify-content: space-between;
             flex-direction: column;
@@ -82,55 +75,16 @@
               width: 100% !important;
               padding: 0 !important;
               margin: 0 !important;
+              font-size: 25px;
             }
             .parrafo-nos{
               margin: 0px;
               padding: 0px 20px;
               width: 100%;
-              font-size: 14px;
+              font-size: 18px !important;
               text-align: center;
             }
           }
-          .sobre-nosotros2 {
-            display: flex;
-            justify-content: space-between;
-            flex-direction: column;
-            width: 100%;
-            .titulo-nos{
-              text-align: center;
-              width: 100% !important;
-              padding: 0 !important;
-              margin: 0 !important;
-            }
-            .parrafo-nos{
-              margin: 0px;
-              padding: 0px 20px;
-              width: 100%;
-              font-size: 14px;
-              text-align: center;
-            }
-        }
-
-        .sobre-nosotros3 {
-          display: flex;
-          flex-direction: column;
-          width: 100%;
-          flex-wrap: nowrap;
-          .titulo-nos{
-            text-align: center;
-            width: 100% !important;
-            padding: 0 !important;
-            margin: 0 !important;
-          }
-          .parrafo-nos{
-            margin: 0px;
-            padding: 0px 20px;
-            width: 100%;
-            font-size: 14px;
-            text-align: center;
-          }
-      }
-
         }
           } 
  

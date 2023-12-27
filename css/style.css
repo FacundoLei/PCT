@@ -60,13 +60,18 @@
 /*MOBILE*/
 /*=================*/
 @media (max-width: 767px) {
-  .espacioF {
+  .caja-padre2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+  .caja-padre2 .espacioF {
     margin-bottom: 20px;
   }
-  .hijo-box {
+  .caja-padre2 .hijo-box {
     padding-left: 0px !important;
   }
-  .hijo-box h4 {
+  .caja-padre2 .hijo-box h4 {
     display: none;
   }
 }
@@ -413,6 +418,13 @@ header a:hover {
 
 /*TABLET*/
 @media (max-width: 890px) {
+  #formcont {
+    display: flex;
+    background-color: #232221;
+    padding: 50px 50px;
+    align-items: center;
+    gap: 40px;
+  }
   .titlecont {
     gap: 13px;
   }
@@ -421,6 +433,10 @@ header a:hover {
   }
   .titlecont .textcont2 {
     font-size: 13px;
+  }
+  .img-cont img {
+    width: 100% !important;
+    height: 100% !important;
   }
 }
 /*=================*/
@@ -485,29 +501,22 @@ header a:hover {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-#contenido-sobrenos .sobre-nosotros1 {
+#contenido-sobrenos .sobre-nosotros {
   display: flex;
-  justify-content: space-between;
-}
-#contenido-sobrenos .sobre-nosotros2 {
-  display: flex;
-  justify-content: space-between;
-}
-#contenido-sobrenos .sobre-nosotros3 {
-  display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
 }
 #contenido-sobrenos .titulo-nos {
-  margin-left: 3%;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin: 0px;
+  color: #B89841;
 }
 #contenido-sobrenos .parrafo-nos {
   width: 50%;
-  margin-right: 3%;
-  margin-top: 10%;
-  margin-bottom: 10%;
   font-size: 26px;
+  margin: 0px 0px 60px 0px;
 }
 
 /*TABLET*/
@@ -544,61 +553,24 @@ header a:hover {
     flex-direction: column;
     flex-wrap: wrap;
   }
-  #contenido-sobrenos .sobre-nosotros1 {
+  #contenido-sobrenos .sobre-nosotros {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     width: 100%;
   }
-  #contenido-sobrenos .sobre-nosotros1 .titulo-nos {
+  #contenido-sobrenos .sobre-nosotros .titulo-nos {
     text-align: center;
     width: 100% !important;
     padding: 0 !important;
     margin: 0 !important;
+    font-size: 25px;
   }
-  #contenido-sobrenos .sobre-nosotros1 .parrafo-nos {
+  #contenido-sobrenos .sobre-nosotros .parrafo-nos {
     margin: 0px;
     padding: 0px 20px;
     width: 100%;
-    font-size: 14px;
-    text-align: center;
-  }
-  #contenido-sobrenos .sobre-nosotros2 {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 100%;
-  }
-  #contenido-sobrenos .sobre-nosotros2 .titulo-nos {
-    text-align: center;
-    width: 100% !important;
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-  #contenido-sobrenos .sobre-nosotros2 .parrafo-nos {
-    margin: 0px;
-    padding: 0px 20px;
-    width: 100%;
-    font-size: 14px;
-    text-align: center;
-  }
-  #contenido-sobrenos .sobre-nosotros3 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    flex-wrap: nowrap;
-  }
-  #contenido-sobrenos .sobre-nosotros3 .titulo-nos {
-    text-align: center;
-    width: 100% !important;
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-  #contenido-sobrenos .sobre-nosotros3 .parrafo-nos {
-    margin: 0px;
-    padding: 0px 20px;
-    width: 100%;
-    font-size: 14px;
+    font-size: 18px !important;
     text-align: center;
   }
 }
@@ -613,30 +585,28 @@ header a:hover {
   display: flex;
   background-color: #232221;
   color: aliceblue;
-  height: 100vh;
+  height: auto;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
-#contenido-consejos .seccion-consejos1 {
+#contenido-consejos .seccion-consejos {
   height: 70%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 50px;
+  gap: 100px;
 }
-#contenido-consejos .texto-con {
-  font-size: 16px;
+#contenido-consejos .seccion-consejos .texto-con {
+  font-size: 25px;
+  width: 100%;
 }
-#contenido-consejos .seccion-consejos2 {
-  height: 70%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 50px;
-}
-#contenido-consejos .texto-con2 {
-  font-size: 16px;
+#contenido-consejos .seccion-consejos .texto-con .titulo-sejo {
+  color: #B89841;
+  font-size: 40px !important;
 }
 
 /*=================*/

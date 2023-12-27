@@ -85,7 +85,31 @@
     align-items: center;
 }
 
-   /*aca finaliza la tercera seccion de la pagina de INICIO*/
+   
+
+/*aca finaliza la tercera seccion de la pagina de INICIO*/
+
+
+
+ /*TABLET*/
+
+ @media (max-width: 890px) { 
+  .flex-form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap !important;
+  .col{
+    width: 80% !important;
+    .form-control{
+      padding:0px;
+    }
+  }
+}
+}
+
+
+
+
 
     /*=================*/
          /*MOBILE*/

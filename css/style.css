@@ -157,6 +157,20 @@ button.btn.btn-primary {
 }
 
 /*aca finaliza la tercera seccion de la pagina de INICIO*/
+/*TABLET*/
+@media (max-width: 890px) {
+  .flex-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap !important;
+  }
+  .flex-form .col {
+    width: 80% !important;
+  }
+  .flex-form .col .form-control {
+    padding: 0px;
+  }
+}
 /*=================*/
 /*MOBILE*/
 /*=================*/
@@ -691,6 +705,15 @@ button.accordion-button:before {
 
 /* Mobile */
 @media (max-width: 767px) {
+  .titulo-faq {
+    background-color: #232221;
+    color: #B89840;
+    margin: 0px 0px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 36px;
+  }
   .accordion {
     padding: 20px;
   }

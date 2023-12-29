@@ -1,6 +1,17 @@
 /*================================================*/
          /*=================SECCION FAQ====================*/
          /*================================================*/
+
+
+         .titulo-faq{
+            background-color: #232221;
+            color: #B89840;
+            margin: 0px 0px;
+            text-align: center;
+            padding-top: 100px;
+            padding-bottom: 50px;
+            font-size: 36px;
+           }
          
          .accordion { 
             padding: 50px;
@@ -15,9 +26,12 @@
                     background-color: #232221;
                     border-radius: 0px;
                     color: #B89840;
+                    font-size: 23px;
                     }
             }
             
+
+
          .accordion-item:first-of-type .accordion-button {
             border: none !important;
             background-color: #232221;
@@ -55,7 +69,7 @@
     .accordion-body{
         background-color: #232221;
         color: white;
-
+        font-size: 18px;
         strong {
             font-weight: 400;
         }

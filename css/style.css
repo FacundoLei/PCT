@@ -1,15 +1,4 @@
 @charset "UTF-8";
-* {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
 /*======================================================*/
 /*aca inicia el FOOTER de la page*/
 /*======================================================*/
@@ -51,9 +40,12 @@
     align-items: center !important;
     gap: 20px;
   }
-  .hijo-box {
+  .caja-padre2 .hijo-box {
     flex-direction: row !important;
     padding: 0px !important;
+  }
+  .caja-padre2 .hijo-box img {
+    margin-right: 9px;
   }
 }
 /*=================*/
@@ -615,12 +607,12 @@ header a:hover {
   gap: 100px;
 }
 #contenido-consejos .seccion-consejos .texto-con {
-  font-size: 25px;
+  font-size: 18px;
   width: 100%;
 }
 #contenido-consejos .seccion-consejos .texto-con .titulo-sejo {
   color: #B89841;
-  font-size: 40px !important;
+  font-size: 27px !important;
 }
 
 /*=================*/
@@ -637,6 +629,16 @@ header a:hover {
 /*================================================*/
 /*=================SECCION FAQ====================*/
 /*================================================*/
+.titulo-faq {
+  background-color: #232221;
+  color: #B89840;
+  margin: 0px 0px;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  font-size: 36px;
+}
+
 .accordion {
   padding: 50px;
   background-color: #232221;
@@ -652,6 +654,7 @@ header a:hover {
   background-color: #232221;
   border-radius: 0px;
   color: #B89840;
+  font-size: 23px;
 }
 .accordion .accordion-item:first-of-type .accordion-button {
   border: none !important;
@@ -683,6 +686,7 @@ button.accordion-button:before {
 .accordion-body {
   background-color: #232221;
   color: white;
+  font-size: 18px;
 }
 .accordion-body strong {
   font-weight: 400;
@@ -717,6 +721,16 @@ button.accordion-button:before {
   .accordion {
     padding: 20px;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
